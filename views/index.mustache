@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>to do list</title>
+  </head>
+  <body>
+
+    {{error}}
+
+    <form method="post">
+      <input id="todolist" type="text" name="todolist" value="todolist" placeholder="add to do list">
+      <button type="submit" name="todolist">todo list</button>
+    </form>
+
+
+
+
+    <ul>
+      {{#todolist}}
+        <li>
+          {{todolist}}
+
+          <small>{{createdAt}}</small>
+        </li>
+      {{/todolist}}
+    </ul>
+  </body>
+</html>
